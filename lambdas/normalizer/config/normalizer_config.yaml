@@ -1,0 +1,49 @@
+division: Women World Cup
+relevant_columns:
+  datetime: match_date
+  home_team_country: home_team
+  away_team_country: away_team
+  winner: winner
+  home_team.goals: home_goals
+  away_team.goals: away_goals
+  home_team_statistics.attempts_on_goal: home_shots
+  away_team_statistics.attempts_on_goal: away_shots
+  home_team_statistics.on_target: home_shots_on_target
+  away_team_statistics.on_target: away_shots_on_target
+  home_team_statistics.corners: home_corners
+  away_team_statistics.corners: away_corners
+  home_team_statistics.yellow_cards: home_yellow_cards
+  away_team_statistics.yellow_cards: away_yellow_cards
+  home_team_statistics.red_cards: home_red_cards
+  away_team_statistics.red_cards: away_red_cards
+integer_columns:
+  - home_shots
+  - away_shots
+  - home_shots_on_target
+  - away_shots_on_target
+  - home_corners
+  - away_corners
+  - home_yellow_cards
+  - away_yellow_cards
+  - home_red_cards
+  - away_red_cards
+final_schema:
+  - division
+  - match_date
+  - home_team
+  - away_team
+  - winner
+  - home_goals
+  - away_goals
+  - home_shots
+  - away_shots
+  - home_shots_on_target
+  - away_shots_on_target
+  - home_corners
+  - away_corners
+  - home_yellow_cards
+  - away_yellow_cards
+  - home_red_cards
+  - away_red_cards
+  - normalization_datetime
+  - normalization_uuid
